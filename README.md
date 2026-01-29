@@ -31,7 +31,3 @@ To run them (inside the container):
 docker compose exec backend bin/phpunit
 ```
 
-## Future Improvements
-- Add Authentication (JWT).
-- Add Pagination using Pagerfanta or API Platform.
-- Use PostgreSQL for production.
