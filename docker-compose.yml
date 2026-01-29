@@ -1,0 +1,20 @@
+services:
+  backend:
+    build: backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/var/www/symfony
+    environment:
+      - DATABASE_URL=sqlite:///%kernel.project_dir%/var/data.db
+      - APP_ENV=dev
+      - CORS_ALLOW_ORIGIN=^https?://(localhost|127\.0\.0\.1)(:[0-9]+)?$
+    restart: unless-stopped
+
+  frontend:
+    build: frontend
+    ports:
+      - "4200:80"
+    depends_on:
+      - backend
+    restart: unless-stopped

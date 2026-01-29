@@ -1,0 +1,17 @@
+Installing dependencies from lock file (including require-dev)
+Verifying lock file contents can be installed on current platform.
+Warning: The lock file is not up to date with the latest changes in composer.json. You may be getting outdated dependencies. It is recommended that you run `composer update` or `composer update <package name>`.
+- Required package "doctrine/doctrine-bundle" is not present in the lock file.
+- Required package "doctrine/orm" is not present in the lock file.
+- Required package "nelmio/cors-bundle" is not present in the lock file.
+- Required package "symfony/serializer" is not present in the lock file.
+- Required package "symfony/validator" is not present in the lock file.
+- Required package "symfony/property-access" is not present in the lock file.
+- Required package "symfony/property-info" is not present in the lock file.
+- Required (in require-dev) package "phpunit/phpunit" is not present in the lock file.
+- Required (in require-dev) package "symfony/browser-kit" is not present in the lock file.
+- Required (in require-dev) package "symfony/css-selector" is not present in the lock file.
+- Required (in require-dev) package "symfony/phpunit-bridge" is not present in the lock file.
+This usually happens when composer files are incorrectly merged or the composer.json file is manually edited.
+Read more about correctly resolving merge conflicts https://getcomposer.org/doc/articles/resolving-merge-conflicts.md
+and prefer using the "require" command over editing the composer.json file directly https://getcomposer.org/doc/03-cli.md#require-r
